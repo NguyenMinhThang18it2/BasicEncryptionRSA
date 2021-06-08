@@ -4,13 +4,14 @@ import model.PublicKeyModel;
 
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Objects;
 
 
 public class SimpleRSA {
     private  int n , e, d;
-
     public  SimpleRSA() {
-
     }
     public KeyModel createkey(){
         generateKey();
@@ -64,8 +65,8 @@ public class SimpleRSA {
     }
 
     private void generateKey(){
-        int p = 61;
-        int q = 53;
+        int p = 89;
+        int q = 97;
 
         n = p * q;
         // const phi = (p - 1) * (q - 1);
